@@ -16,12 +16,12 @@ public class Main
 
     public static final String MODID = "ctdcurrency";
     public static final String MODNAME = "CTD Currency";
-    public static final String VERSION = "1.0.0-1.7.10";
+    public static final String VERSION = "1.0.0b-1.7.10";
         
     @Instance
     public static Main instance = new Main();
     
-    @SidedProxy(clientSide="com.themastergeneral.ctdcurrency.proxy.ClientProxy", serverSide="com.themastergeneral.ctdcurrency.proxy..ServerProxy")
+    @SidedProxy(clientSide="com.themastergeneral.ctdcurrency.proxy.ClientProxy", serverSide="com.themastergeneral.ctdcurrency.proxy.ServerProxy")
     public static CommonProxy proxy;
      
     @EventHandler
