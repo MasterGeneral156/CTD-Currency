@@ -1,14 +1,14 @@
 package com.themastergeneral.ctdcurrency;
 
-import com.themastergeneral.ctdcurrency.proxy.CommonProxy;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import com.themastergeneral.ctdcurrency.proxy.CommonProxy;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main 
@@ -16,7 +16,7 @@ public class Main
 
     public static final String MODID = "ctdcurrency";
     public static final String MODNAME = "CTD Currency";
-    public static final String VERSION = "1.0.0b-1.7.10";
+    public static final String VERSION = "1.0.0";
         
     @Instance
     public static Main instance = new Main();
@@ -28,19 +28,19 @@ public class Main
     public void preInit(FMLPreInitializationEvent e) 
     {
     	System.out.println("CTD Currency loading...");
-    	proxy.preInit(e);
+    	this.proxy.preInit(e);
     }
         
     @EventHandler
     public void init(FMLInitializationEvent e) 
     {
-    	proxy.init(e);
+    	this.proxy.init(e);
     }
         
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) 
     {
-    	proxy.postInit(e);
+    	this.proxy.postInit(e);
     	System.out.println("CTD Currency loaded.");
     }
 }

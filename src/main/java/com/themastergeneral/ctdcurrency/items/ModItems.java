@@ -1,6 +1,6 @@
 package com.themastergeneral.ctdcurrency.items;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public final class ModItems 
 {
