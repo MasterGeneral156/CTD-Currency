@@ -10,7 +10,6 @@ public class Items extends Item
 	protected Items(String unlocalizedName)
 	{
 		setUnlocalizedName(unlocalizedName);
-		//setTextureName(Main.MODID + ":" + unlocalizedName);
-		setCreativeTab(CreativeTabs.tabMisc);
+		setCreativeTab(CreativeTabs.MISC);
 	}
 }
