@@ -1,15 +1,14 @@
 package com.themastergeneral.ctdcurrency.proxy;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.themastergeneral.ctdcurrency.events.Events;
 import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
 import com.themastergeneral.ctdcurrency.items.ModItems;
-
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {
 
@@ -22,6 +21,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
+
     }
 
     public void postInit(FMLPostInitializationEvent e) {

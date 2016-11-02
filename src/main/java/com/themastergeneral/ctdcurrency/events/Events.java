@@ -2,35 +2,33 @@ package com.themastergeneral.ctdcurrency.events;
 
 import java.util.Random;
 
-import com.themastergeneral.ctdcurrency.Main;
 import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent.ItemPickupEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemPickupEvent;
 
 public class Events 
 {
 	@SubscribeEvent
 	public void onLivingDrop(LivingDropsEvent event) 
 	{
-	      if(event.entity instanceof EntityWither) 
+	      if(event.getEntity() instanceof EntityWither) 
 	      {
 	         ItemStack itemStackToDrop = new ItemStack(ModItems.ten, 1);
-	         event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, itemStackToDrop));
+	         event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
 	      }
-	      else if (event.entity instanceof EntityDragon)
+	      else if (event.getEntity() instanceof EntityDragon)
 	      {
 	    	  ItemStack itemStackToDrop = new ItemStack(ModItems.ten, 1);
-	    	  event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, itemStackToDrop));
+	    	  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
 	      }
 	      else
 	      {
@@ -39,7 +37,7 @@ public class Events
 	    	  int randomInt = randomGenerator.nextInt(100);
 	    	  if (randomInt == 1)
 	    	  {
-	    	  	event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, itemStackToDrop));  
+	    	  	event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));  
 	    	  }
 	      }
 	}
