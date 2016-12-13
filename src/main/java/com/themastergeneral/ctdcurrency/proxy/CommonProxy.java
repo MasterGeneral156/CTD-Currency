@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdcurrency.proxy;
 
+import net.minecraft.init.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,4 +28,10 @@ public class CommonProxy {
     public void postInit(FMLPostInitializationEvent e) {
 
     }
+
+	public void registerItemRenderer(Items items, int i, String name) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }

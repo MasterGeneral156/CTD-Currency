@@ -4,12 +4,16 @@ import com.themastergeneral.ctdcurrency.Main;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class Items extends Item 
+public class Items extends Item //implements ItemModelProvider
 {
-	protected Items(String unlocalizedName)
+	protected String name;
+	public Items(String name) 
 	{
-		setUnlocalizedName(unlocalizedName);
-		setCreativeTab(CreativeTabs.MISC);
+		this.name = name;
+		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
+		this.setCreativeTab(CreativeTabs.MISC);
 	}
 }

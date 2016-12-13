@@ -28,7 +28,8 @@ public final class ItemRenderRegister {
 	    reg(ModItems.million);
 	}
 
-	public static void reg(Item item) {
+	public static void reg(Item item) 
+	{
 	    Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 	    .register(item, 0, new ModelResourceLocation(modid + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
