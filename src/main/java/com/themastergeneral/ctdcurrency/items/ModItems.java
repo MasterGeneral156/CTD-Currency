@@ -29,7 +29,7 @@ public final class ModItems
 	
     public static final void init() 
     {    	
-    	//hundredth = register(new Items("hundredth"));
+    		hundredth = register(new Items("hundredth"));
 		twenthith = register(new Items("twenthith"));
 		tenth = register(new Items("tenth"));
 		quarter = register(new Items("quarter"));
