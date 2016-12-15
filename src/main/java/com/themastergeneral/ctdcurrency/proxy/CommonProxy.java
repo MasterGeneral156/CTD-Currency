@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.themastergeneral.ctdcurrency.events.Events;
 import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
+import com.themastergeneral.ctdcurrency.handler.Crafting;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 public class CommonProxy {
@@ -18,6 +19,7 @@ public class CommonProxy {
     	Achievements.secondinit();
     	MinecraftForge.EVENT_BUS.register(new Events());
     	FMLCommonHandler.instance().bus().register(new Events());
+    	Crafting.addRecipes();
     }
 
     public void init(FMLInitializationEvent e) {
