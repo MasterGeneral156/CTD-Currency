@@ -2,6 +2,7 @@ package com.themastergeneral.ctdcurrency.handler;
 
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -202,6 +203,83 @@ public class Crafting
 	}
 	public static void BuyThings()
 	{
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE, 64), 	
+				new ItemStack(ModItems.ten),
+				new ItemStack(ModItems.five),
+				new ItemStack(ModItems.buy));
 		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.DIRT, 64), 	
+				new ItemStack(ModItems.one),
+				new ItemStack(ModItems.one),
+				new ItemStack(ModItems.one),
+				new ItemStack(ModItems.five),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.DIAMOND, 1), 	
+				new ItemStack(ModItems.fivethousand),
+				new ItemStack(ModItems.thousand),
+				new ItemStack(ModItems.thousand),
+				new ItemStack(ModItems.thousand),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.GOLD_INGOT, 1), 	
+				new ItemStack(ModItems.thousand),
+				new ItemStack(ModItems.hundred),
+				new ItemStack(ModItems.hundred),
+				new ItemStack(ModItems.fifty),
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.IRON_INGOT, 1), 	
+				new ItemStack(ModItems.hundred),
+				new ItemStack(ModItems.hundred),
+				new ItemStack(ModItems.fifty),
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.five),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.ENDER_PEARL, 1), 	
+				new ItemStack(ModItems.fivehundred),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.EMERALD, 1), 	
+				new ItemStack(ModItems.fivethousand),
+				new ItemStack(ModItems.tenthousand),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.LOG, 32), 	
+				new ItemStack(ModItems.ten),
+				new ItemStack(ModItems.fifty),
+				new ItemStack(ModItems.five),
+				new ItemStack(ModItems.one),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.NETHER_STAR, 1), 	
+				new ItemStack(ModItems.fivehundredthousand),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.DRAGON_EGG, 1), 	
+				new ItemStack(ModItems.fivehundredthousand),
+				new ItemStack(ModItems.hundredthousand),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.COAL, 32), 	
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.ten),
+				new ItemStack(ModItems.five),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.REDSTONE, 8), 	
+				new ItemStack(ModItems.fifty),
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.ten),
+				new ItemStack(ModItems.buy));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.DYE, 8, 4), 	
+				new ItemStack(ModItems.fifty),
+				new ItemStack(ModItems.twenty),
+				new ItemStack(ModItems.ten),
+				new ItemStack(ModItems.buy));
 	}
 }
