@@ -22,22 +22,56 @@ public class Events
 	{
 	      if(event.getEntity() instanceof EntityWither) 
 	      {
-	         ItemStack itemStackToDrop = new ItemStack(ModItems.ten, 1);
+	         ItemStack itemStackToDrop = new ItemStack(ModItems.twenty, 1);
 	         event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
 	      }
 	      else if (event.getEntity() instanceof EntityDragon)
 	      {
-	    	  ItemStack itemStackToDrop = new ItemStack(ModItems.ten, 1);
+	    	  ItemStack itemStackToDrop = new ItemStack(ModItems.twenty, 1);
 	    	  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
 	      }
 	      else
 	      {
-	    	  ItemStack itemStackToDrop = new ItemStack(ModItems.hundredth, 1);
 	    	  Random randomGenerator = new Random();
 	    	  int randomInt = randomGenerator.nextInt(100);
 	    	  if (randomInt == 1)
 	    	  {
-	    	  	event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));  
+	    		  int itemdrop = randomGenerator.nextInt(1000);
+	    		  if (itemdrop <= 500)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.hundredth, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else if (itemdrop <= 750 && itemdrop >= 501)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.twenthith, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else if (itemdrop <= 875 && itemdrop >= 751)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.tenth, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else if (itemdrop <= 937 && itemdrop >= 876)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.quarter, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else if (itemdrop <= 968 && itemdrop >= 938)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.one, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else if (itemdrop <= 983 && itemdrop >= 969)
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.five, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
+	    		  else
+	    		  {
+	    			  ItemStack itemStackToDrop = new ItemStack(ModItems.ten, 1);
+	    			  event.getDrops().add(new EntityItem(event.getEntity().worldObj, event.getEntity().posX, event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    		  }
 	    	  }
 	      }
 	}
