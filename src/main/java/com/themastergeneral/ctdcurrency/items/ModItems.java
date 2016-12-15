@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdcurrency.items;
 
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public final class ModItems 
@@ -14,42 +15,38 @@ public final class ModItems
 	public static Items twenty;
 	public static Items fifty;
 	public static Items hundred;
+	public static Items fivehundred;
 	public static Items thousand;
+	public static Items fivethousand;
 	public static Items tenthousand;
+	public static Items fiftythousand;
 	public static Items hundredthousand;
+	public static Items fivehundredthousand;
 	public static Items million;
 	
     public static final void init() 
-    {
-    	hundredth = new Items("hundredth");
-    	twenthith = new Items("twenthith");
-    	tenth = new Items("tenth");
-    	quarter = new Items("quarter");
-    	one = new Items("one");
-    	five = new Items("five");
-    	ten = new Items("ten");
-    	twenty = new Items("twenty");
-    	fifty = new Items("fifty");
-    	hundred = new Items("hundred");
-    	thousand = new Items("thousand");
-    	tenthousand = new Items("tenthousand");
-    	hundredthousand = new Items("hundredthousand");
-    	million = new Items("million");
-    	
-    	GameRegistry.registerItem(hundredth, "hundredth");
-    	GameRegistry.registerItem(twenthith, "twenthith");
-    	GameRegistry.registerItem(tenth, "tenth");
-    	GameRegistry.registerItem(quarter, "quarter");
-    	GameRegistry.registerItem(one, "one");
-    	GameRegistry.registerItem(five, "five");
-    	GameRegistry.registerItem(ten, "ten");
-    	GameRegistry.registerItem(twenty, "twenty");
-    	GameRegistry.registerItem(fifty, "fifty");
-    	GameRegistry.registerItem(hundred, "hundred");
-    	GameRegistry.registerItem(thousand, "thousand");
-    	GameRegistry.registerItem(tenthousand, "tenthousand");
-    	GameRegistry.registerItem(hundredthousand, "hundredthousand");
-    	GameRegistry.registerItem(million, "million");
+    {    	
+    	hundredth = register(new Items("hundredth"));
+		twenthith = register(new Items("twenthith"));
+		tenth = register(new Items("tenth"));
+		quarter = register(new Items("quarter"));
+		one = register(new Items("one"));
+		five = register(new Items("five"));
+		ten = register(new Items("ten"));
+		twenty = register(new Items("twenty"));
+		fifty = register(new Items("fifty"));
+		hundred = register(new Items("hundred"));
+		fivehundred = register(new Items("fivehundred"));
+		thousand = register(new Items("thousand"));
+		fivethousand = register(new Items("fivethousand"));
+		tenthousand = register(new Items("tenthousand"));
+		hundredthousand = register(new Items("hundredthousand"));
+		fivehundredthousand = register(new Items("fivehundredthousand"));
+		million = register(new Items("million"));
     }
-
+    private static <T extends Item> T register(T item) 
+	{
+		GameRegistry.register(item);
+		return item;
+	}
 }
