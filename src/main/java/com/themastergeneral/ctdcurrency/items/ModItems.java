@@ -1,5 +1,8 @@
 package com.themastergeneral.ctdcurrency.items;
 
+import com.themastergeneral.ctdcurrency.client.render.items.ItemRenderRegister;
+import com.themastergeneral.ctdcurrency.client.render.items.ItemRenderRegister.ItemModelProvider;
+
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -26,7 +29,7 @@ public final class ModItems
 	
     public static final void init() 
     {    	
-    	hundredth = register(new Items("hundredth"));
+    	//hundredth = register(new Items("hundredth"));
 		twenthith = register(new Items("twenthith"));
 		tenth = register(new Items("tenth"));
 		quarter = register(new Items("quarter"));
@@ -48,6 +51,10 @@ public final class ModItems
     private static <T extends Item> T register(T item) 
 	{
 		GameRegistry.register(item);
+		if(item instanceof ItemModelProvider) 
+		{
+			((ItemModelProvider)item).registerItemModel(item);
+		}
 		return item;
 	}
 }
