@@ -27,9 +27,12 @@ public final class ModItems
 	public static Items fivehundredthousand;
 	public static Items million;
 	
+	public static Tool buy;
+	public static Tool down;
+	
     public static final void init() 
     {    	
-    		hundredth = register(new Items("hundredth"));
+    	hundredth = register(new Items("hundredth"));
 		twenthith = register(new Items("twenthith"));
 		tenth = register(new Items("tenth"));
 		quarter = register(new Items("quarter"));
@@ -47,6 +50,9 @@ public final class ModItems
 		hundredthousand = register(new Items("hundredthousand"));
 		fivehundredthousand = register(new Items("fivehundredthousand"));
 		million = register(new Items("million"));
+		
+		buy = register(new Tool("buy"));
+		down = register(new Tool("down"));
     }
     private static <T extends Item> T register(T item) 
 	{
