@@ -16,8 +16,6 @@ public class Items extends Item implements ItemModelProvider
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTabs.MISC);
 	}
-
-	@Override
 	public void registerItemModel(Item item) 
 	{
 		Main.proxy.registerItemRenderer(this, 0, name);
