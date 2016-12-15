@@ -18,7 +18,6 @@ public class CommonProxy {
     	Achievements.init();
     	Achievements.secondinit();
     	MinecraftForge.EVENT_BUS.register(new Events());
-    	FMLCommonHandler.instance().bus().register(new Events());
     	Crafting.addRecipes();
     }
 
