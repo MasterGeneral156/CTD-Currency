@@ -40,6 +40,7 @@ public final class ModItems
 		thousand = register(new Items("thousand"));
 		fivethousand = register(new Items("fivethousand"));
 		tenthousand = register(new Items("tenthousand"));
+		fiftythousand = register(new Items("fiftythousand"));
 		hundredthousand = register(new Items("hundredthousand"));
 		fivehundredthousand = register(new Items("fivehundredthousand"));
 		million = register(new Items("million"));
