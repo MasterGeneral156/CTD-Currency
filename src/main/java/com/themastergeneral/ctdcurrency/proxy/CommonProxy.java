@@ -1,6 +1,7 @@
 package com.themastergeneral.ctdcurrency.proxy;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -9,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.themastergeneral.ctdcurrency.events.Events;
 import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
 import com.themastergeneral.ctdcurrency.handler.Crafting;
-import com.themastergeneral.ctdcurrency.items.Items;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 public class CommonProxy {
@@ -30,7 +30,7 @@ public class CommonProxy {
 
     }
 
-	public void registerItemRenderer(Items items, int i, String name) 
+	public void registerItemRenderer(Item item, int i, String name) 
 	{
 		
 	}
