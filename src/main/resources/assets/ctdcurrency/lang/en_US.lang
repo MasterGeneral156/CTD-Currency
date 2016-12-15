@@ -8,10 +8,16 @@ item.ten.name=$10
 item.twenty.name=$20
 item.fifty.name=$50
 item.hundred.name=$100
+item.fivehundred.name=$500
 item.thousand.name=$1,000
+item.fivethousand.name=$5,000
 item.tenthousand.name=$10,000
+item.fiftythousand.name=$50,000
 item.hundredthousand.name=$100,000
+item.fivehundredthousand.name=$500,000
 item.million.name=$1,000,000
+item.down.name=Down Convert Tool
+item.buy.name=Buying Tool
 
 achievement.getHundredth=Chump Change!
 achievement.getHundredth.desc=Earn your first $0.01
