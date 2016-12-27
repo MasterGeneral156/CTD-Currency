@@ -18,7 +18,7 @@ public class Main
 
     public static final String MODID = "ctdcurrency";
     public static final String MODNAME = "CTD Currency";
-    public static final String VERSION = "6.0.1";
+    public static final String VERSION = "6.2.1";
         
     @Instance
     public static Main instance = new Main();
