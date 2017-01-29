@@ -1,23 +1,17 @@
 package com.themastergeneral.ctdcurrency.items;
 
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdcurrency.Main;
-import com.themastergeneral.ctdcurrency.client.render.items.ItemRenderRegister.ItemModelProvider;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class Items extends Item implements ItemModelProvider
+public class Items extends CTDItem implements ItemModelProvider
 {
-	protected String name;
-	protected Items(String name)
+	protected Items(String name, String modid)
 	{
-		this.name = name;
-		this.setUnlocalizedName(name);
-		this.setRegistryName(name);
+		super(name,modid);
 		this.setCreativeTab(CreativeTabs.MISC);
-	}
-	public void registerItemModel(Item item) 
-	{
-		Main.proxy.registerItemRenderer(this, 0, name);
 	}
 }
