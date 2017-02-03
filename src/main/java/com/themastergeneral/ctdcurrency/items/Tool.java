@@ -1,14 +1,14 @@
 package com.themastergeneral.ctdcurrency.items;
 
-import net.minecraft.item.ItemStack;
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
 
-import com.themastergeneral.ctdcurrency.client.render.items.ItemRenderRegister.ItemModelProvider;
+import net.minecraft.item.ItemStack;
 
 public class Tool extends Items implements ItemModelProvider {
 
-	protected Tool(String name) 
+	protected Tool(String name, String modid) 
 	{
-		super(name);
+		super(name,modid);
 		this.maxStackSize = 1;
 		this.setNoRepair();
 	}
