@@ -1,12 +1,13 @@
 package com.themastergeneral.ctdcurrency.items;
 
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdcurrency.Main;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public final class ModItems 
+public final class ModItems extends RegisterItem
 {
 	public static Items hundredth;
 	public static Items twenthith;
@@ -54,13 +55,4 @@ public final class ModItems
 		buy = register(new Tool("buy", Main.MODID));
 		down = register(new Tool("down", Main.MODID));
     }
-    private static <T extends Item> T register(T item) 
-	{
-		GameRegistry.register(item);
-		if(item instanceof ItemModelProvider) 
-		{
-			((ItemModelProvider)item).registerItemModel(item);
-		}
-		return item;
-	}
 }
