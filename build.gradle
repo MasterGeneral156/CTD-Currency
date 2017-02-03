@@ -1,17 +1,21 @@
-buildscript {
-    repositories {
+buildscript
+{
+    repositories
+	{
         jcenter()
-        maven { url = "http://files.minecraftforge.net/maven" }
+        maven
+		{
+			url = "http://files.minecraftforge.net/maven"
+		}
     }
-    dependencies {
+    dependencies
+	{
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
-//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-
-version = "6.3.0"
+version = "6.3.0-1.11.2"
 group = "com.themastergeneral.ctdcurrency" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "CTD Currency"
 
@@ -29,16 +33,26 @@ minecraft
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
-dependencies 
+repositories 
 {
-    compile files('libs/CTD Core 1.0.2.jar')
+  maven 
+  {
+	//JEI
+    url = "http://dvs1.progwml6.com/files/maven"
+  }
 }
 
-processResources
+dependencies
+{
+	deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
+	runtime "mezz.jei:jei_${mc_version}:${jei_version}"
+}
+
+processResources 
 {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
-    from(sourceSets.main.resources.srcDirs)
+    from(sourceSets.main.resources.srcDirs) 
 	{
         include 'mcmod.info'
         expand 'version':project.version, 'mcversion':project.minecraft.version
