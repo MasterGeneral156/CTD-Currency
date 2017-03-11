@@ -18,9 +18,9 @@ public class Main
 
     public static final String MODID = "ctdcurrency";
     public static final String MODNAME = "CTD Currency";
-    public static final String VERSION = "5.1.0";
+    public static final String VERSION = "5.1.1";
     public static final String DEPENDENCIES = "required-after:ctdcore@[1.0.2,]";
-    public static final String updateJSON = "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Currency.json";
+    public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Currency.json";
         
     @Instance
     public static Main instance = new Main();
