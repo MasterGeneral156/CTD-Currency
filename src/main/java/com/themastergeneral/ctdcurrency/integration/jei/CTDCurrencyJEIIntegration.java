@@ -6,7 +6,7 @@ import com.themastergeneral.ctdcurrency.config.Config;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 import net.minecraft.item.ItemStack;
-import mezz.jei.api.BlankModPlugin;
+/*import mezz.jei.api.BlankModPlugin;
 import mezz.jei.api.IModRegistry;
 
 @mezz.jei.api.JEIPlugin
@@ -30,3 +30,4 @@ public class CTDCurrencyJEIIntegration extends BlankModPlugin
 		}
 	}
 }
+*/

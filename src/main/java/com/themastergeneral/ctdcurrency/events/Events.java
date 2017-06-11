@@ -83,7 +83,7 @@ public class Events
 		      }
 		}
 	}
-	@SubscribeEvent
+	/*@SubscribeEvent
 	 public void pickup(ItemPickupEvent event)
 	 {
 		if(event.pickedUp.getEntityItem().getItem() == ModItems.hundredth)
@@ -142,5 +142,5 @@ public class Events
 		{
 			event.player.addStat(Achievements.Money14, 1);
 		}
-	 }
+	 }*/
 }

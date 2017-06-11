@@ -3,12 +3,12 @@ package com.themastergeneral.ctdcurrency.events.achievements;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 import net.minecraft.block.Block;
-import net.minecraft.stats.Achievement;
-import net.minecraftforge.common.AchievementPage;
+/*import net.minecraft.stats.Achievement;
+import net.minecraftforge.common.AchievementPage;*/
 
 public class Achievements 
 {
-	public static Achievement Money1;
+	/*public static Achievement Money1;
 	public static Achievement Money2;
 	public static Achievement Money3;
 	public static Achievement Money4;
@@ -64,5 +64,5 @@ public class Achievements
 				Money5, Money6, Money7, Money8, Money9, Money10, Money11, Money12, Money13, 
 				Money14);
 		AchievementPage.registerAchievementPage(CurrencyPage);
-	}
+	}*/
 }
