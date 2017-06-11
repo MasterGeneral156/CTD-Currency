@@ -25,9 +25,9 @@ public class CommonProxy
 		config = new Configuration(new File(directory.getPath(), "CTD/CTDCurrency.cfg"));
 		Config.readConfig();
     	ModItems.init();
-    	Achievements.init();
-    	Achievements.secondinit();
-    	MinecraftForge.EVENT_BUS.register(new Events());
+    	//Achievements.init();
+    	//Achievements.secondinit();
+    	//MinecraftForge.EVENT_BUS.register(new Events());
     	Crafting.addRecipes();
     }
 

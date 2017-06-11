@@ -1,0 +1,24 @@
+{
+  "type": "crafting_shapeless",
+  "group": "ctdcurrency",
+  "ingredients": [
+    {
+      "item": "ctdcurrency:twenthith"
+    },
+	{
+      "item": "ctdcurrency:twenthith"
+    },
+	{
+      "item": "ctdcurrency:twenthith"
+    },
+	{
+      "item": "ctdcurrency:twenthith"
+    },
+    {
+      "item": "ctdcurrency:twenthith"
+    }
+  ],
+  "result": {
+    "item": "ctdcurrency:quarter"
+  }
+}

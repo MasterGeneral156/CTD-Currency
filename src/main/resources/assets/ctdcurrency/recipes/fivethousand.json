@@ -1,0 +1,24 @@
+{
+  "type": "crafting_shapeless",
+  "group": "ctdcurrency",
+  "ingredients": [
+	{
+      "item": "ctdcurrency:thousand"
+    },
+	{
+      "item": "ctdcurrency:thousand"
+    },
+	{
+      "item": "ctdcurrency:thousand"
+    },
+	{
+      "item": "ctdcurrency:thousand"
+    },
+	{
+      "item": "ctdcurrency:thousand"
+    }
+  ],
+  "result": {
+    "item": "ctdcurrency:fivethousand"
+  }
+}
