@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ctdtweaks:one",
+	"ingredients": 
+	[
+		{
+		  "item": "ctdcurrency:quarter"
+		},
+		{
+		  "item": "ctdcurrency:quarter"
+		},
+		{
+		  "item": "ctdcurrency:quarter"
+		},
+		{
+		  "item": "ctdcurrency:quarter"
+		}
+	],
+	"result":
+	{
+		"item": "ctdcurrency:one"
+	}
+}

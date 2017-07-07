@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ctdtweaks:tenth",
+	"ingredients": 
+	[
+		{
+		  "item": "ctdcurrency:twenthith"
+		},
+		{
+		  "item": "ctdcurrency:twenthith"
+		}
+	],
+	"result":
+	{
+		"item": "ctdcurrency:tenth"
+	}
+}

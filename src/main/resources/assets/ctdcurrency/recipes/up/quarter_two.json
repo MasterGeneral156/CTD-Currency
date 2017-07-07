@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ctdtweaks:quarter",
+	"ingredients": 
+	[
+		{
+		  "item": "ctdcurrency:tenth"
+		},
+		{
+		  "item": "ctdcurrency:tenth"
+		},
+		{
+		  "item": "ctdcurrency:twenthith"
+		}
+	],
+	"result":
+	{
+		"item": "ctdcurrency:quarter"
+	}
+}

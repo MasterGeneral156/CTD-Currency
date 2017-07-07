@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ctdtweaks:ten",
+	"ingredients": 
+	[
+		{
+		  "item": "ctdcurrency:one"
+		},
+		{
+		  "item": "ctdcurrency:one"
+		},
+		{
+		  "item": "ctdcurrency:one"
+		},
+		{
+		  "item": "ctdcurrency:one"
+		},
+		{
+		  "item": "ctdcurrency:one"
+		},
+		{
+		  "item": "ctdcurrency:five"
+		}
+	],
+	"result":
+	{
+		"item": "ctdcurrency:ten"
+	}
+}

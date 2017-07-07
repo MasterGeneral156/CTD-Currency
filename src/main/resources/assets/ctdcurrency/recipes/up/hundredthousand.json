@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ctdtweaks:hundredthousand",
+	"ingredients": 
+	[
+		{
+		  "item": "ctdcurrency:fiftythousand"
+		},
+		{
+		  "item": "ctdcurrency:fiftythousand"
+		}
+	],
+	"result":
+	{
+		"item": "ctdcurrency:hundredthousand"
+	}
+}
