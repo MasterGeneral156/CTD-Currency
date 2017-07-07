@@ -3,7 +3,6 @@ package com.themastergeneral.ctdcurrency.events;
 import java.util.Random;
 
 import com.themastergeneral.ctdcurrency.config.Config;
-import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
 import net.minecraft.entity.EntityLiving;
@@ -83,64 +82,4 @@ public class Events
 		      }
 		}
 	}
-	/*@SubscribeEvent
-	 public void pickup(ItemPickupEvent event)
-	 {
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.hundredth)
-		{
-			event.player.addStat(Achievements.Money1, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.twenthith)
-		{
-			event.player.addStat(Achievements.Money2, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.tenth)
-		{
-			event.player.addStat(Achievements.Money3, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.quarter)
-		{
-			event.player.addStat(Achievements.Money4, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.one)
-		{
-			event.player.addStat(Achievements.Money5, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.five)
-		{
-			event.player.addStat(Achievements.Money6, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.ten)
-		{
-			event.player.addStat(Achievements.Money7, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.twenty)
-		{
-			event.player.addStat(Achievements.Money8, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.fifty)
-		{
-			event.player.addStat(Achievements.Money9, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.hundred)
-		{
-			event.player.addStat(Achievements.Money10, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.thousand)
-		{
-			event.player.addStat(Achievements.Money11, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.tenthousand)
-		{
-			event.player.addStat(Achievements.Money12, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.hundredthousand)
-		{
-			event.player.addStat(Achievements.Money13, 1);
-		}
-		if(event.pickedUp.getEntityItem().getItem() == ModItems.million)
-		{
-			event.player.addStat(Achievements.Money14, 1);
-		}
-	 }*/
 }
