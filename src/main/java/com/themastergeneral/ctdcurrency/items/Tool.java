@@ -1,11 +1,12 @@
 package com.themastergeneral.ctdcurrency.items;
 
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.item.ItemStack;
 
-public class Tool extends Items implements ItemModelProvider {
-
+public class Tool extends CTDItem 
+{
 	protected Tool(String name, String modid) 
 	{
 		super(name,modid);

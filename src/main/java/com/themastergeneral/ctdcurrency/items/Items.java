@@ -7,7 +7,7 @@ import com.themastergeneral.ctdcurrency.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class Items extends CTDItem implements ItemModelProvider
+public class Items extends CTDItem
 {
 	protected Items(String name, String modid)
 	{
