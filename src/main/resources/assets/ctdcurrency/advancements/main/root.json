@@ -1,0 +1,37 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdcurrency:hundredth"
+        },
+        "title": 
+		{
+            "translate": "advancement.getHundredth"
+        },
+        "description": 
+		{
+            "translate": "advancement.getHundredth.desc"
+        },
+		"frame": "goal",
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast": true,
+		"announce_to_chat": true
+    },
+    "criteria": 
+	{
+        "core": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdcurrency:hundredth"
+                    }
+                ]
+            }
+        }
+    }
+}

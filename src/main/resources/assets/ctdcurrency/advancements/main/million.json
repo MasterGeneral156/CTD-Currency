@@ -1,0 +1,34 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdcurrency:million"
+        },
+        "title": 
+		{
+            "translate": "advancement.getMillion"
+        },
+        "description": 
+		{
+            "translate": "advancement.getMillion.desc"
+        }
+    },
+	"parent": "ctdcurrency:main/hundredthousand",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdcurrency:million"
+                    }
+                ]
+            }
+        }
+    }
+}
