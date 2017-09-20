@@ -7,8 +7,7 @@ import com.themastergeneral.ctdcurrency.Main;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public final class ModItems extends RegisterItem
-{
+public final class ModItems extends RegisterItem {
 	public static Items hundredth;
 	public static Items twenthith;
 	public static Items tenth;
@@ -27,13 +26,12 @@ public final class ModItems extends RegisterItem
 	public static Items hundredthousand;
 	public static Items fivehundredthousand;
 	public static Items million;
-	
+
 	public static Tool buy;
 	public static Tool down;
-	
-    public static final void init() 
-    {    	
-    	hundredth = register(new Items("hundredth", Main.MODID));
+
+	public static final void init() {
+		hundredth = register(new Items("hundredth", Main.MODID));
 		twenthith = register(new Items("twenthith", Main.MODID));
 		tenth = register(new Items("tenth", Main.MODID));
 		quarter = register(new Items("quarter", Main.MODID));
@@ -49,10 +47,11 @@ public final class ModItems extends RegisterItem
 		tenthousand = register(new Items("tenthousand", Main.MODID));
 		fiftythousand = register(new Items("fiftythousand", Main.MODID));
 		hundredthousand = register(new Items("hundredthousand", Main.MODID));
-		fivehundredthousand = register(new Items("fivehundredthousand", Main.MODID));
+		fivehundredthousand = register(new Items("fivehundredthousand",
+				Main.MODID));
 		million = register(new Items("million", Main.MODID));
-		
+
 		buy = register(new Tool("buy", Main.MODID));
 		down = register(new Tool("down", Main.MODID));
-    }
+	}
 }

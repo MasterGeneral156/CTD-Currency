@@ -14,25 +14,23 @@ import com.themastergeneral.ctdcurrency.config.Config;
 import com.themastergeneral.ctdcurrency.events.Events;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
-public class CommonProxy 
-{
+public class CommonProxy {
 	public static Configuration config;
-    public void preInit(FMLPreInitializationEvent e) 
-    {
-    	File directory = e.getModConfigurationDirectory();
-		config = new Configuration(new File(directory.getPath(), "ctd/ctdcurrency.cfg"));
+
+	public void preInit(FMLPreInitializationEvent e) {
+		File directory = e.getModConfigurationDirectory();
+		config = new Configuration(new File(directory.getPath(),
+				"ctd/ctdcurrency.cfg"));
 		Config.readConfig();
-    	ModItems.init();
-    	MinecraftForge.EVENT_BUS.register(new Events());
-    }
+		ModItems.init();
+		MinecraftForge.EVENT_BUS.register(new Events());
+	}
 
-    public void init(FMLInitializationEvent e) 
-    {
+	public void init(FMLInitializationEvent e) {
 
-    }
+	}
 
-    public void postInit(FMLPostInitializationEvent e)
-    {
+	public void postInit(FMLPostInitializationEvent e) {
 
-    }
+	}
 }
