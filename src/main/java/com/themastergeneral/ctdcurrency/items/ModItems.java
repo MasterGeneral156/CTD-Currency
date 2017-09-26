@@ -1,11 +1,7 @@
 package com.themastergeneral.ctdcurrency.items;
 
-import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdcore.item.RegisterItem;
-import com.themastergeneral.ctdcurrency.Main;
-
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import com.themastergeneral.ctdcurrency.CTDCurrency;
 
 public final class ModItems extends RegisterItem {
 	public static Items hundredth;
@@ -31,27 +27,28 @@ public final class ModItems extends RegisterItem {
 	public static Tool down;
 
 	public static final void init() {
-		hundredth = register(new Items("hundredth", Main.MODID));
-		twenthith = register(new Items("twenthith", Main.MODID));
-		tenth = register(new Items("tenth", Main.MODID));
-		quarter = register(new Items("quarter", Main.MODID));
-		one = register(new Items("one", Main.MODID));
-		five = register(new Items("five", Main.MODID));
-		ten = register(new Items("ten", Main.MODID));
-		twenty = register(new Items("twenty", Main.MODID));
-		fifty = register(new Items("fifty", Main.MODID));
-		hundred = register(new Items("hundred", Main.MODID));
-		fivehundred = register(new Items("fivehundred", Main.MODID));
-		thousand = register(new Items("thousand", Main.MODID));
-		fivethousand = register(new Items("fivethousand", Main.MODID));
-		tenthousand = register(new Items("tenthousand", Main.MODID));
-		fiftythousand = register(new Items("fiftythousand", Main.MODID));
-		hundredthousand = register(new Items("hundredthousand", Main.MODID));
+		hundredth = register(new Items("hundredth", CTDCurrency.MODID));
+		twenthith = register(new Items("twenthith", CTDCurrency.MODID));
+		tenth = register(new Items("tenth", CTDCurrency.MODID));
+		quarter = register(new Items("quarter", CTDCurrency.MODID));
+		one = register(new Items("one", CTDCurrency.MODID));
+		five = register(new Items("five", CTDCurrency.MODID));
+		ten = register(new Items("ten", CTDCurrency.MODID));
+		twenty = register(new Items("twenty", CTDCurrency.MODID));
+		fifty = register(new Items("fifty", CTDCurrency.MODID));
+		hundred = register(new Items("hundred", CTDCurrency.MODID));
+		fivehundred = register(new Items("fivehundred", CTDCurrency.MODID));
+		thousand = register(new Items("thousand", CTDCurrency.MODID));
+		fivethousand = register(new Items("fivethousand", CTDCurrency.MODID));
+		tenthousand = register(new Items("tenthousand", CTDCurrency.MODID));
+		fiftythousand = register(new Items("fiftythousand", CTDCurrency.MODID));
+		hundredthousand = register(new Items("hundredthousand",
+				CTDCurrency.MODID));
 		fivehundredthousand = register(new Items("fivehundredthousand",
-				Main.MODID));
-		million = register(new Items("million", Main.MODID));
+				CTDCurrency.MODID));
+		million = register(new Items("million", CTDCurrency.MODID));
 
-		buy = register(new Tool("buy", Main.MODID));
-		down = register(new Tool("down", Main.MODID));
+		buy = register(new Tool("buy", CTDCurrency.MODID));
+		down = register(new Tool("down", CTDCurrency.MODID));
 	}
 }
