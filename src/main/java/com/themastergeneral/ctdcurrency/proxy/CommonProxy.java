@@ -16,28 +16,26 @@ import com.themastergeneral.ctdcurrency.events.achievements.Achievements;
 import com.themastergeneral.ctdcurrency.handler.Crafting;
 import com.themastergeneral.ctdcurrency.items.ModItems;
 
-public class CommonProxy 
-{
+public class CommonProxy {
 	public static Configuration config;
-    public void preInit(FMLPreInitializationEvent e) 
-    {
-    	File directory = e.getModConfigurationDirectory();
-		config = new Configuration(new File(directory.getPath(), "CTD/CTDCurrency.cfg"));
+
+	public void preInit(FMLPreInitializationEvent e) {
+		File directory = e.getModConfigurationDirectory();
+		config = new Configuration(new File(directory.getPath(),
+				"ctd/ctdcurrency.cfg"));
 		Config.readConfig();
-    	ModItems.init();
-    	Achievements.init();
-    	Achievements.secondinit();
-    	MinecraftForge.EVENT_BUS.register(new Events());
-    	Crafting.addRecipes();
-    }
+		ModItems.init();
+		Achievements.init();
+		Achievements.secondinit();
+		MinecraftForge.EVENT_BUS.register(new Events());
+		Crafting.addRecipes();
+	}
 
-    public void init(FMLInitializationEvent e) 
-    {
+	public void init(FMLInitializationEvent e) {
 
-    }
+	}
 
-    public void postInit(FMLPostInitializationEvent e)
-    {
+	public void postInit(FMLPostInitializationEvent e) {
 
-    }
+	}
 }

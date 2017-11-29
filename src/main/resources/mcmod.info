@@ -3,14 +3,14 @@
   "modid": "ctdcurrency",
   "name": "CTD Currency",
   "description": "Adds a currency to minecraft.",
-  "version": "5.1.1",
+  "version": "6.5.1",
   "mcversion": "1.10.2",
   "url": "https://minecraft.curseforge.com/projects/ctd-currency",
-  "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Currency.json",
+  "updateUrl": "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Currency.json",
   "authorList": ["TheMasterGeneral"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/ctdcurrency/textures/logo-new.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["ctdcore"]
 }
 ]
