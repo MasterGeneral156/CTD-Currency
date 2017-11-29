@@ -1,16 +1,16 @@
 [
 {
-  "modid": "ctdpaint",
-  "name": "CTD Paint",
-  "description": "Paint dyed blocks into other colors while in the world. Awesome!",
-  "version": "1.1.5",
-  "mcversion": "1.10.2",
-  "url": "https://minecraft.curseforge.com/projects/ctd-paint",
-  "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Paint.json",
+  "modid": "ctdcurrency",
+  "name": "CTD Currency",
+  "description": "Adds a currency to minecraft.",
+  "version": "6.5.1",
+  "mcversion": "1.11.2",
+  "url": "https://minecraft.curseforge.com/projects/ctd-currency",
+  "updateUrl": "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Currency.json",
   "authorList": ["TheMasterGeneral"],
-  "credits": "All rights reserved.",
-  "logoFile": "",
+  "credits": "",
+  "logoFile": "assets/ctdcurrency/textures/logo-new.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["ctdcore"]
 }
 ]
