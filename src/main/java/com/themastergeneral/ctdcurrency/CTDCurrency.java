@@ -19,11 +19,11 @@ public class CTDCurrency {
 
 	public static final String MODID = "ctdcurrency";
 	public static final String MODNAME = "CTD Currency";
-	public static final String VERSION = "6.5.1";
+	public static final String VERSION = "6.5.2";
 	public static final String DEPENDENCIES = "required-after:ctdcore@[1.2,]";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Currency.json";
 	public static final String MCVersion = "1.12.2";
-	public static final String FingerPrint = "441b509a0f58a0ef41aca8daf1be20d96287635e";
+	public static final String FingerPrint = "5101015479fe39f20b47f365472250d312a50a57";
 
 	@Instance
 	public static CTDCurrency instance = new CTDCurrency();
